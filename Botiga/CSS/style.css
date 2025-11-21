@@ -60,6 +60,17 @@ section {
     padding-top: 1%;
 }
 
+.header {
+    padding: 0px;
+}
+
+.header img {
+    object-fit: cover;
+    width: 100%;
+    height: 40vw;
+    border-bottom: solid 1px rgb(201, 201, 201);
+}
+
 .centerSection {
     display: flex;
     justify-content: center;
@@ -131,7 +142,7 @@ section h1 {
 }
 
 .article div {
-    background-color: #ff501b;
+    background-color: #661694;
     color: rgb(255, 246, 243);
     width: 100%;
     text-align: center;
@@ -214,7 +225,7 @@ form {
 }
 
 .login .button {
-    background-color: rgb(255, 80, 27);
+    background-color: #661694;
     padding: 18px;
     color: white;
     font-weight: bold;
@@ -231,12 +242,13 @@ form {
 }
 
 aside {
-    background-color: #858585;
+    background-color: rgb(201, 201, 201);
     display: grid;
     gap: 1px;
     padding: 1px;
     margin-top: 25px;
-    grid-template-columns: auto 33.33% 33.33%;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: stretch;
 }
 
 aside div{
@@ -304,4 +316,30 @@ footer {
 footer a {
     text-decoration: none;
     color: rgb(30, 88, 214);
+}
+
+@media (max-width: 900px) {
+    aside {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    aside > div:nth-child(3) {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 700px) {
+    aside {
+        grid-template-columns: 1fr;
+    }
+
+    aside div > img{
+        height: 100px;
+        position: relative;
+        bottom: 0px;
+    }
+
+    aside > div:nth-child(3) {
+        grid-column: span 1;
+    }
 }
