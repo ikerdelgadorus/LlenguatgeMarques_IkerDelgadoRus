@@ -279,6 +279,15 @@ aside a > p {
     top: -11px;
     left: 35px;
     color: #252525;
+    transition: all 1s;
+}
+
+aside a {
+    transition: all 1s;
+}
+
+aside a:hover{
+    color: #771aad;
 }
 
 aside div h3 {

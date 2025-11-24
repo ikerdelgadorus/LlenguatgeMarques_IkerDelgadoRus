@@ -1,0 +1,92 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(34, 34, 34);
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+header div{
+    padding: 0px;
+    margin: 0px;
+}
+
+header div h1{
+    color: rgb(212, 212, 212);
+    padding: 0px;
+    margin: 0px;
+}
+
+header div p{
+    color: rgb(175, 175, 175);
+    padding: 0px;
+    margin: 0px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+section .background{
+    opacity: 40%;
+    filter: saturate(10%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* igual que background-size: cover */
+    object-position: center;
+}
+
+section a {
+    text-decoration: none;
+}
+
+article {
+    background-color: rgb(34, 34, 34);
+    max-width: 800px;
+    border-radius: 2px;
+    margin: 20px;
+    position: relative;
+    display: flex;
+    padding: 15px;
+    box-shadow: 0px 20px 30px #313131;
+}
+
+article .title {
+    background-color: rgb(255, 102, 0);
+    color: white;
+    padding: 5px;
+    padding-left: 20px;
+    border-radius: 2px;
+    font-size: 20px;
+    width: 200px;
+    position: absolute;
+    left: -20px;
+}
+
+article .articleBox {
+    max-width: 50%;
+    padding: 5px;
+    margin: 0px;
+}
+
+article .articleBox p{
+    width: 100%;
+    color: rgb(170, 170, 170);
+    text-align: justify;
+    text-justify: inter-word;
+    margin-top: 60px;
+    line-height: 25px;
+    text-decoration: none;
+}
+
+article .articleBox img{
+    width: 100%;
+    border: 1px solid rgb(170, 170, 170);
+}
