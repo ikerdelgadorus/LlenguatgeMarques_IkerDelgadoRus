@@ -31,6 +31,8 @@ header div p{
 section {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
 }
 
 section .background{
@@ -39,7 +41,7 @@ section .background{
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* igual que background-size: cover */
+    object-fit: cover;
     object-position: center;
 }
 
@@ -71,7 +73,7 @@ article .title {
 }
 
 article .articleBox {
-    max-width: 50%;
+    width: 50%;
     padding: 5px;
     margin: 0px;
 }
@@ -87,6 +89,9 @@ article .articleBox p{
 }
 
 article .articleBox img{
-    width: 100%;
+    max-width: 100%;
     border: 1px solid rgb(170, 170, 170);
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: top;
 }

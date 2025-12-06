@@ -1,0 +1,231 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+    font-family: sans-serif;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: solid 1px rgb(78, 70, 80);
+}
+
+header img{
+    width: 30vw;
+    max-width: 300px;
+}
+
+h1 {
+    color: aliceblue;
+}
+
+.imageHeader {
+    width: 100%;
+    border-bottom: solid 1px rgb(78, 70, 80);
+}
+
+.imageHeader img {
+    width: 100%;
+    filter: saturate(15%);
+}
+
+section {
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+    position: relative;
+}
+
+section h1{
+    padding: 0px;
+    margin: 0px;
+}
+
+.dobleSection{
+    display: flex;
+    position: relative;
+    padding: 25px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.llistat {  
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    border-bottom: solid 1px rgb(75, 75, 75);
+    border-right: solid 1px rgb(75, 75, 75);
+    border-top: solid 1px rgb(25, 25, 25);
+    border-left: solid 1px rgb(25, 25, 25);
+}
+
+.llistat div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.llistat ol{
+    width: 50%;
+}
+
+.llistat li{
+    text-align: start;
+    color: white;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border: 3px solid white;
+    color: white;
+    table-layout: 1fr 1fr 1fr;
+    margin-top: 10px;
+}
+
+table th {
+    border-bottom: 3px solid #ddd;
+    text-align: left;
+    padding: 10px;
+}
+
+table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.albumYear {
+    text-align: left;
+}
+
+.albumName {
+    text-align: left;
+}
+
+.albumSongs {
+    text-align: right;
+}
+
+.fotografies {
+    max-width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.foto{
+    max-width: 500px;
+    padding: 15px;
+    position: relative;
+    background-color: #f0f8ff;
+    border-radius: 2px;
+    border: 1px solid #fafdff;
+    box-shadow: 5px 5px 10px #3a3a3a;
+    text-align: start;
+}
+
+.foto img{
+    width: 100%;
+    transition: all 1.5s;
+    border-radius: 3px;
+    border: 1px solid #e0e7ec;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.audioSection{
+    justify-content: center ;
+    display: flex;
+    padding: 10px;
+    position: relative;
+}
+
+.audioReplay {
+    border: 2px solid rgb(43, 43, 43);
+    background-image: linear-gradient(to bottom, black, rgb(41, 40, 41));
+    max-height: 200px;
+    display: flex;
+    padding: 10px;
+    margin: 0px 20px 0px 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.audioReplay img {
+    display: block;
+    max-width: 130px;
+    max-height: 130px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgb(43, 43, 43);
+}
+
+.audioReplay div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 15px;
+    width: 100%;
+}
+
+.audioReplay div h2{
+    Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    color: rgb(182, 182, 182);
+    font-weight: lighter;
+    text-shadow: 2px 2px 8px black  ;
+    text-align: left;
+}
+
+audio{
+    background-image: linear-gradient(to bottom, rgb(209, 209, 209), rgb(134, 134, 134));
+    border: 2px solid rgb(43, 43, 43);
+    border-radius: 10px;
+}
+
+audio::-webkit-media-controls-panel {
+    background-image: linear-gradient(to bottom, rgb(209, 209, 209), rgb(134, 134, 134));
+    border: none;
+    outline: none;
+    border-radius: 0;
+    box-shadow: black 10px 10px;
+    color: black;
+}
+
+.video iframe {
+    max-width: 100%;
+}
+
+.map {
+    max-width: 100%;
+    width: 1100px;
+    border-radius: 10px;
+    border: 2px solid rgb(43, 43, 43);
+}
+
+footer {
+    text-align: center;
+    max-width: 100%;
+    padding: 35px;
+    background-image: linear-gradient(to bottom, black, rgb(41, 40, 41));
+    color: white;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: rgb(255, 178, 212);
+}
