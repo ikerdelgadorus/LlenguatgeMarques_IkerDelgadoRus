@@ -2,6 +2,10 @@ body {
     padding: 0px;
     margin: 0px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(../Multimedia/Images/Pattern.png);
+    background-repeat: repeat;
+    background-size: 500px;
+    background-color: #757575;
 }
 
 header {
@@ -61,7 +65,6 @@ article {
 }
 
 article .title {
-    background-color: rgb(255, 102, 0);
     color: white;
     padding: 5px;
     padding-left: 20px;
@@ -70,6 +73,18 @@ article .title {
     width: 200px;
     position: absolute;
     left: -20px;
+}
+
+.orange{
+    background-color: rgb(255, 102, 0);
+}
+
+.violet{
+    background-color: rgb(111, 0, 255);
+}
+
+.red{
+    background-color: rgb(255, 0, 64);
 }
 
 article .articleBox {
