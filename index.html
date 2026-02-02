@@ -1,55 +1,213 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Iker Delgado Rus</title>
-        <link rel="icon" type="image/png" href="Botiga/MULTIMEDIA/IMAGES/MrWatchLogo.png">
-        <meta charset="utf8">
-        <link rel="stylesheet" href="CSS/style.css">
-    </head>
-    <body>
-
-        <header>
-            <div>
-                <h1>Iker Delgado Rus</h1>
-                <p>19/02/2007</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iker Delgado | Portafoli</title>
+    <meta autor="Iker Delgado" />
+    <meta name="description" content="Portafoli Iker Delgado" />
+    <meta name="keywords" content="HTML, CSS, Bootstrap, JavaScript, DAM, web, software" />
+    <link rel="icon" href="Multimedia/Images/Cassette.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://api.fontshare.com/v2/css?f[]=kola@400&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta name="keywords" content="HTML, CSS, Bootstrap, JavaScript, DAM, web, software" />
+</head>
+<body>
+    <nav class="navbar navbar-collapse navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="Multimedia/Images/Cassette.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#aboutme">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#webdesign">Disseny web</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projectes-video">Projectes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacte</a>
+                    </li>
+                </ul>
             </div>
-        </header>
+        </div>
+    </nav>
+    <section class="hero align-items-stretch">
+        <div>
+            <img class="hero-imatge-developer" src="Multimedia/Images/Foto.png" alt="Fotografia" />
+            <h1>Iker Delgado Rus</h1>
+            <h2>Studiant de DAM</h2>
+        </div>
+        <div class="hero-inferior">
+            <img class="img-fluid" src="Multimedia/Images/Orinador.png" alt="imatge ordinador i llenguatges"/>
+        </div>
+    </section>
+    <section id="aboutme" class="about-me dark-section">
+        <div>
+            <h2 class="section-title">Sobre mi</h2>
+            <p class="section-text">Benvingut, em dic Iker Delgado i soc un estudiant de DAM a l'institut castellet. En el que estic obtenint habilitats per la meva formació de programador.</br>La resta de la meva informació es troba en el botó inferior.</p>
+        </div>
+        <!--botó descarregar cv-->
+        <div class="text-center">
+            <a href="Multimedia/DelgadoIker_CV.pdf" download class="btn btn-success btn-lg btn-responive">📄 Descarregar CV</a>
+        </div>
+    </section>
+    <section class="experiencia white-section">
+        <div class="container text-center">
+            <!--tenim una fila -->
+            <div class="row">
+            <!--a dins de la fila hi haurà 3 columnes, una per cada experiencia o coneixement-->
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-filetype-css"></i>
+                    <p class="experiencia-title">Web</p>
+                    <p>Part de la meva formació consta de desenvolupar i dissenyar pàgines web de diferents formes com podria ser utilitzar Bootstrap o HTML. Per una altra banda, per la meva part tinc uns coneixements bàsics sobre JavaScript.</p>
+                    <div>
+                        <span class="badge rounded-pill bg-success">HTML</span>
+                        <span class="badge rounded-pill bg-success">CSS</span>
+                        <span class="badge rounded-pill bg-secondary">JavaScript</span>
+                        <span class="badge rounded-pill bg-secondary">Bootstrap</span>
+                    </div>
+                </div>
 
-        <section>
-            <a href="Botiga/index.html">
-                <article>
-                    <h1 class="title violet">Mr. Watch</h1>
-                    <div class="articleBox">
-                        <p>Aquesta es la pàgina web que hem de fer a la pràctica 1 del <b>RA3</b>. En el meu cas he triat fer una pàgina web sobre <b>rellotges de luxe</b> de diferents marques famoses. Per això surten rellotges de marques com Rolex, Jaeger-leCoultre, IWC, Omega...</p>
+
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-filetype-java"></i>
+                    <p class="experiencia-title">Aplicacions</p>
+                    <p>A part d'aprendre sobre disseny web, estem aprenent sobre llenguatges per fer aplicacions com és el cas de Java. I a part d'això tinc coneixements sobre Unity i C# de quan programo en el meu temps lliure.</p>
+                    <div>
+                        <span class="badge rounded-pill bg-success">Eclipse</span>
+                        <span class="badge rounded-pill bg-success">Java</span>
+                        <span class="badge rounded-pill bg-secondary">Unity</span>
+                        <span class="badge rounded-pill bg-secondary">C#</span>
                     </div>
-                    <div class="articleBox">
-                        <img src="Multimedia/Images/Web_MrWatch.png" alt="MrWatch_Web">
+                </div>
+
+
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-ubuntu"></i>
+                    <p class="experiencia-title">O.S.</p>
+                    <p>Encara que no sigui un dels meus millors caps, tinc coneixements sobre Linux i Windows. I com muntar servidors en les dues plataformes. Junt amb els altres llenguatges, tinc coneixements de Scripts Bash.</p>
+                    <div>
+                        <span class="badge rounded-pill bg-success">Linux</span>
+                        <span class="badge rounded-pill bg-success">Windows</span>
+                        <span class="badge rounded-pill bg-warning text-dark">Windows SV</span>
+                        <span class="badge rounded-pill bg-secondary">Bash</span>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--section web dessign-->
+    <section id="webdesign" class="projectes white-section d-flex flex-column">
+      <h2 class="section-title black-text">Disseny Web</h2>
+      <h3 class="section-description">Alguns dels projectes webs fets a DAM.</h3>
+      <!--galeria de projectes-->
+      <div class="container text-center projectes-container">
+        <div class="row">
+ 	        <!--projecte 1-->
+            <div class="projecte col-12 col-md-6 col-lg-4">
+                <img src="Multimedia/Images/Capture_Store.png" alt="projecte 1"/>
+                <div class="overlay">
+                    <p>Botiga de rellotges</p>
+                    <div class="icones-contenidor">
+                        <a href="Botiga/index.html" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-watch"></i>
+                        </a>
                     </div>
-                </article>
+                </div>
+            </div>
+            <!--projecte 2-->
+            <div class="projecte col-12 col-md-6 col-lg-4">
+                <img src="Multimedia/Images/Capture_MusicBox.png" alt="projecte 1"/>
+                <div class="overlay">
+                    <p>Extremoduro</p>
+                    <div class="icones-contenidor">
+                        <a href="MusicBox/index.html" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-vinyl-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--projecte 3-->
+            <div class="projecte col-12 col-md-6 col-lg-4">
+                <img src="Multimedia/Images/Capture_Pintor.png" alt="projecte 1"/>
+                <div class="overlay">
+                    <p>Zdzisław Beksiński</p>
+                    <div class="icones-contenidor">
+                        <a href="Pintor/index.html" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-palette-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!--section projectes-->
+    <section id="projectes-video" class="projectes white-section d-flex flex-column">
+        <h2 class="section-title black-text">Projectes</h2>
+        <h3 class="section-description">Alguns projectes fets al cicle de DAM.</h3>
+        <!--galeria de projectes-->
+        <div class="container text-center projectes-container">
+            <div class="row">
+                <!--video del projecte 1-->
+                <div class="projecte col-12 col-md-6 col-lg-4">
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/9_9e7hlwisI?si=tUVx3SQMB7YNS5v8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <h2>Projecte 1</h2>
+                    <p>Aquest va ser el meu primer projecte...</p>
+                </div>
+                <!--video del projecte 1-->
+                <div class="projecte col-12 col-md-6 col-lg-4">
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/9_9e7hlwisI?si=tUVx3SQMB7YNS5v8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <h2>Projecte 2</h2>
+                    <p>Aquest va ser el meu segon projecte...</p>
+                </div>
+                <!--video del projecte 1-->
+                <div class="projecte col-12 col-md-6 col-lg-4">
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/9_9e7hlwisI?si=tUVx3SQMB7YNS5v8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <h2>Projecte 3</h2>
+                    <p>Aquest va ser el meu tercer projecte...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--section contacte-->
+    <footer id="contact" class="dark-section d-flex flex-column align-items-center justify-content-center">
+        <img class="footer-logo" src="Multimedia/Images/Cassette.png" alt="logo"/>
+        <p class="footer-text text-center">Contacte</p>
+        <div class= "social-icons d-flex flex-wrap align-items-center justify-content-center">
+            <a href="mailto:homer@hotmail.com" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-envelope"></i>
             </a>
-            <a href="MusicBox/index.html">
-                <article>
-                    <h1 class="title orange">Extremoduro</h1>
-                    <div class="articleBox">
-                        <p>Aquesta és la pàgina web que hem de fer a la pràctica 2 del <b>RA3</b>. En el meu cas he triat el grup de música <b>Extremoduro</b>, en la web surten imatges, els àlbums i algun àudio.</p>
-                    </div>
-                    <div class="articleBox">
-                        <img src="Multimedia/Images/Capture_MusicBox.png" alt="MrWatch_Web">
-                    </div>
-                </article>
+            <a href="https://www.linkedin.com/in/homer-simpson" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-linkedin"></i>
             </a>
-            <a href="Pintor/index.html">
-                <article>
-                    <h1 class="title red">Zdzisław Beksiński</h1>
-                    <div class="articleBox">
-                        <p>Aquesta es la pàgina web que hem de fer a la pràctica 3 del <b>RA3</b>. En aquest cas he triat al pintor polonès <b>Zdzisław Beksiński</b>. És un pintor no gaire reconegut, però el seu precedent de pintures gòtiques i body horror, van aconseguir que fos un pintor únic.</p>
-                    </div>
-                    <div class="articleBox">
-                        <img src="Multimedia/Images/Capture_Pintor.png" alt="Pintor_Web">
-                    </div>
-                </article>
+            <a href="https://www.github.com/homer-simpson" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
             </a>
-        </section>
-    </body>
+            <a href="https://www.twitter.com/homer-simpson" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-twitter"></i>
+            </a>
+        </div>
+        <div class="drets">Iker Delgado Rus (2025) &#169;</div>
+    </footer>
+    <!-- carrega el javascript de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ </body>
 </html>
-
