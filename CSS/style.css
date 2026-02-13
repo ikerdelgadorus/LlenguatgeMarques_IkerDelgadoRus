@@ -230,6 +230,9 @@ footer {
     color: #aeaeae;
     padding: 20px;
 }
+.row {
+    row-gap: 20px;
+}
 
 @media screen and (max-width: 768px) {
     /*distribució del menu en dispositius mòbils*/

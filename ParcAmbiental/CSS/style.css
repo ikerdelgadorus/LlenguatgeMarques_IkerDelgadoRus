@@ -1,0 +1,222 @@
+:root {
+  --semi-white: #e0e0e0;
+  --semi-black: #080708;
+  --gray: #a8a8a8;
+  --square: #c9c3b6;
+  --square-obscur: #9e9786;
+  --text-link: #585449;
+  --section-title: #6b675b;
+}
+
+body {
+    background-color: var(--semi-white);
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    width: 100%;
+    max-width: 100%;
+    background-color: var(--semi-black);
+}
+
+.headerImg{
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    height: 20vw;
+}
+
+header div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#00000000, var(--semi-black));
+}
+
+header div h1{
+    font-family: 'Switzer', sans-serif;
+    color: var(--semi-white);
+    font-size: 4vw;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    flex-wrap: wrap;
+}
+
+section > div{
+    width: 100%;
+    max-width: 80%;
+    padding: 2%;
+    display: flex;
+}
+
+.squere{
+    background-color: var(--square);
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.columns p{
+    font-family: 'Cabinet Grotesk', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    column-count: 2;
+    column-gap: 50px;
+    column-rule: 1px solid var(--gray);
+}
+
+.squere p{
+    min-width: 125px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+.fotoOficines {
+    max-width: 100%;
+    width: 1000px;
+    border: 2px solid var(--square-obscur);
+    border-radius: 2px;
+    aspect-ratio: 3/2;
+    min-width: 300px;
+}
+
+.fotoSection {
+    max-height: 325px;
+    border: 2px solid var(--square-obscur);
+    border-radius: 2px;
+    aspect-ratio: 4/2;
+    min-width: 300px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.info div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.info p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+section h1 {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Satoshi', sans-serif;
+    color: var(--section-title);
+}
+
+.left{
+    text-align: start;
+}
+
+.mapsDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.maps {
+    width: 1500px;
+    max-width: 60%;
+    border: 2px solid var(--square-obscur);
+    border-radius: 3px;
+    aspect-ratio: 7/4;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--square);
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+
+footer img{
+    max-width: 180px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--semi-black);
+    transition: 1s all;
+    min-width: 100%;
+    font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+footer a:hover {
+    color: var(--text-link);
+}
+
+@media (max-width: 992px) {
+    .headerImg{
+        height: 30vw;
+    }
+    .squere{
+        grid-template-columns: 1fr;
+    }
+    header div{
+        height: 30vw;
+    }
+
+    .maps {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    .info{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .headerImg{
+        height: 40vw;
+    }
+
+    header div{
+        height: 40vw;
+    }
+    .maps {
+        max-width: 90%;
+    }
+}
