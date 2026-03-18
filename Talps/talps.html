@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Whac-A-Mole</title>
+        <link rel="icon" href="Multimedia/Images/Cursor_Hammer.png" type="image/x-icon">
+        <link rel="stylesheet" href="talps.css">
+    </head>
+    <body>
+        <div class="game">
+            <h1>Whac-A-Mole</h1>
+            <div class="talpContainer gameObj">
+                <img class="talp gameObj" src="Multimedia/Images/No_Digglet.png" alt="topo" onclick="pam(this)">
+                <img class="talp gameObj" src="Multimedia/Images/No_Digglet.png" alt="topo" onclick="pam(this)">
+                <img class="talp gameObj" src="Multimedia/Images/No_Digglet.png" alt="topo" onclick="pam(this)">
+                <img class="talp gameObj" src="Multimedia/Images/No_Digglet.png" alt="topo" onclick="pam(this)">
+                <img class="talp gameObj" src="Multimedia/Images/No_Digglet.png" alt="topo" onclick="pam(this)">
+                <img class="talp gameObj" src="Multimedia/Images/No_Digglet.png" alt="topo" onclick="pam(this)">
+                <img class="talp gameObj" src="Multimedia/Images/No_Digglet.png" alt="topo" onclick="pam(this)">
+                <img class="talp gameObj" src="Multimedia/Images/No_Digglet.png" alt="topo" onclick="pam(this)">
+                <img class="talp gameObj" src="Multimedia/Images/No_Digglet.png" alt="topo" onclick="pam(this)">
+                <div class="puntuationContainer gameObj">
+                    <p id="puntuation"> Puntuacio: 0</p>
+                </div>
+                <div class="timerContainer gameObj">
+                    <p id="timer"> Time: 2:00</p>
+                </div>
+            </div>
+            <div class="felicitatsContainer final">
+                <img src="Multimedia/Images/Diploma.png">
+                <div>
+                    <h2>Felicitats has guanyat</h2>
+                    <h3 id="finalpoints"></h2>
+                </div>
+            </div>
+        </div>
+        <img id="audio" src="Multimedia/Images/Noise.png" alt="Audio"  onclick="changeAudio()">
+        <a href="../index.html"><h4 class="copyright">Iker Delgado Rus (2025) &#169;</h4></a>
+        <script src="talps.js"></script>
+    </body>
+</html>

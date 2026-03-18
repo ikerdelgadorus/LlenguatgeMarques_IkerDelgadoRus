@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>javascript</title>
+    </head>
+    <body>
+        <h1> Agenda </h1>
+    	<p id="dia"></p>
+    	<h2> Tasques pendents </h2>
+        <div id="tasques"></div>
+        
+        <h2>Converteix aquestes funcions en funcions de fletxa</h2>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <script>
+            //let name = prompt("Escriu el teu nom: ")
+            //alert("Hola " +name)
+            /*let num1 = prompt("Escriu un nombre: ")
+            let num2 = prompt("Escriu un altre nombre: ")
+            alert(Number(num1) + Number(num2))*/
+
+            /*function nombreAleatori(){
+                let userNum = prompt("Escriu un nombre:");
+                let aleatori = Math.floor(Math.random() * 4) + 1;
+                alert((userNum == aleatori) ? ("Has encertat, el nombre aleatori era " + userNum) : ("No has encertat, el nombre aleatori era " + aleatori));
+                let tornar = confirm("Vols tornar a jugar?");
+                if (tornar == true) {
+                    nombreAleatori();
+                }
+            }
+
+            nombreAleatori();*/
+
+            /*document.getElementById("demo").innerHTML = "My First JavaScript";
+            document.getElementById("demo").innerHTML = "La segona vegada sobrescriu";
+            document.getElementById("demo2").innerHTML = "My Second JavaScript<div id='fill'></div>";
+            document.getElementById("fill").innerHTML = "escrivint a dins del div fill <p>pepa</p>";*/
+
+
+
+            /*let avui = new Date().toLocaleDateString("es-ES");
+            document.getElementById("dia").innerHTML = avui;
+
+            let user = prompt("Escriu el nombre d'usuari:");
+            let password = prompt("Escriu la contrasenya:");
+
+            if (user == "admin" && password == "1234"){
+                document.getElementById("tasques").innerHTML = "<ul><li>Fer un pdf</li><li>Buscar bugs</li><li>Anar al cine</li></ul>";
+            } else if (user == "alum" && password == "pepe"){
+                document.getElementById("tasques").innerHTML = "<ul><li>Fer deures</li><li>Menjar una burguer</li><li>Escoltar musica horrible a tot volum</li></ul>"; 
+            } else {
+                alert("Error password");
+            }*/
+            let varGlobal=5;
+            let suma=(a,b)=>{return (a+b);}
+            let peix=(dibuix,vegades)=>{
+                let retorna="";
+                for (let i=0;i<vegades;i++)  {
+                    retorna=retorna+dibuix+"<br><br>";
+                }
+                return(retorna);
+            }
+            let expo=()=>{return (varGlobal**2);}
+            let saluda=()=>{document.getElementById("demo4").innerHTML = "Hola!";}
+            
+            document.getElementById("demo").innerHTML =`${suma(2,5)}`;
+            document.getElementById("demo2").innerHTML =`${peix("><((((*>",3)}`;
+            document.getElementById("demo3").innerHTML =`${expo()}`;
+            saluda();
+
+            /*function suma(a,b)  {
+                return (a+b);
+            }
+
+
+            function peix(dibuix,vegades) {
+                let retorna="";
+                for (let i=0;i<vegades;i++)  {
+                    retorna=retorna+dibuix+"<br><br>";
+                }
+                return(retorna);
+            }
+
+            
+            function expo(){
+                return (varGlobal**2);
+            }
+
+            
+            function saluda(){
+                document.getElementById("demo4").innerHTML ="Hola!";
+            }*/
+        </script>
+    </body>
+</html>

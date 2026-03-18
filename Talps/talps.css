@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Pixeled'; /* Nombre que usarás luego */
+    src: url('Multimedia/Fonts/minecraft/Minecraft.ttf') format('truetype');
+    font-weight: normal; /* O 'bold', '300', etc. */
+    font-style: normal; /* O 'italic' */
+}
+
+body {
+    background-image: url('Multimedia/Images/Pokemon_Gold.png');
+    background-size: 100%;
+    background-color: rgb(117, 148, 129);
+    cursor: pointer;
+    cursor: url("Multimedia/Images/Cursor_Hammer.png"), auto;
+}
+
+#audio{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+}
+
+.copyright {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    height: 50px;
+    bottom: 0px;
+    left: 30px;
+    color: white;
+    font-family: 'Pixeled', Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-shadow: 0px 3px #1d1d1d;
+}
+
+.game{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
+
+.game h1{
+    background-color: white;
+    padding: 20px 50px 15px 50px;
+    border-radius: 100px;
+    text-decoration: underline;
+    border: solid 5px #2e2e2e;
+    box-shadow: #2e2e2e 0px -10px;
+    font-family: 'Pixeled', Arial, Helvetica, sans-serif;
+    text-shadow: 0px 3px #b1b1b1;
+}
+
+.talpContainer{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    max-width: 600px;
+    background-image: url('Multimedia/Images/Grass2.png');
+    background-repeat: repeat;
+    background-size: 100px;
+    border: solid 5px #2e2e2e;
+    box-shadow: #2e2e2e 0px -10px;
+    position: relative;
+}
+
+.talp{
+    min-width: 50px;
+    min-height: 50px;
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.puntuationContainer{
+    position: absolute;
+    width: 200px;
+    top: 5px;
+    left: 35px;
+    font-family: 'Pixeled', Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-shadow: 0px 3px #457745;
+}
+
+.timerContainer{
+    position: absolute;
+    width: 130px;
+    top: 5px;
+    right: 35px;
+    font-family: 'Pixeled', Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-shadow: 0px 3px #457745;
+}
+
+.final {
+    display: none;
+}
+
+.felicitatsContainer {
+    position: relative;
+    border: solid 5px #2e2e2e;
+    width: 96%;
+    max-width: 750px;
+    background-color: #e8f898;
+}
+
+.felicitatsContainer img {
+    width: 100%;
+    max-width: 750px;
+}
+
+.felicitatsContainer div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.felicitatsContainer h2{
+    font-family: 'Pixeled', Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-shadow: 0px 5px #abac7c;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.felicitatsContainer h3{
+    font-family: 'Pixeled', Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    text-shadow: 0px 6px #abac7c;
+}
