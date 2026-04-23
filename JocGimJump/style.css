@@ -1,0 +1,73 @@
+body{
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Satoshi', sans-serif;
+}
+
+.scoreTable {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    padding: 10px;
+    padding-left: 50px;
+    margin: 20px;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    border: 8px solid rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+.infobutton {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: aliceblue;
+    border-radius: 100px;
+    box-shadow: 2px 2px 20px #575757;
+    border: 5px solid black;
+    display: flex;
+    vertical-align: middle;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.infobutton:hover {
+    transform: translateY(-10px);
+    background-color: rgb(248, 238, 217);
+}
+
+.infobutton h1 {
+    font-size: 60px;
+    font-width: 10px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.infomenu {
+    display: none;
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px #575757;
+    border: 5px solid black;
+    max-width: 80%;
+    transition: all 1s;
+}
+
+.infomenu h2{
+    margin: 0px;
+    padding: 0px;
+}
+
+.infomenu p{
+    margin: 0px;
+    padding: 0px;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ml5.js - Dibuixar mans i comptador</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ml5@0.12.2/dist/ml5.min.js"></script>
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scoreTable">
+        <p id="pointsBanner"><b>Punts:</b> 0</p>
+        <p id="timerBanner"><b>Time:</b> 60</p>
+        <p id="burgerBanner"><b>Burger:</b> </p>
+    </div>
+    <button class="infobutton" onclick="btnInfo()">
+        <h1>i</h1>
+    </button>
+    <div id="infobutton" class="infomenu">
+        <h2>Com funciona el joc?</h2>
+        <p>El joc es basa en aconseguir menjars i fer entrepans. Has de acumular ingrediens, pero no més de tres. Y quan acumules fins a tres, has de agafar un pa per crear un entrepar i obtenir punts.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
