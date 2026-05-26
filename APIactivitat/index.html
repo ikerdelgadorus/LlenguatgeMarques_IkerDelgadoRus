@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Buscaditto</title>
+        <link rel="icon" type="image/png" href="ditto.svg">
+        <meta charset="utf8">
+        <meta name="keywords" content="HTML, CSS">
+        <meta name="description" content="Web per mostrar les obres de Zdzisław Beksiński">
+        <meta name="author" content="Iker Delgado Rus">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link href="https://api.fontshare.com/v2/css?f[]=zodiak@100,300,800&display=swap" rel="stylesheet">
+        <style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');</style>
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="Logo_Buscaditto.png" />
+            <div class="searchbar">
+                <input placeholder="Search pokemon" id="text" />
+                <button type="button" onclick="searchBar()"><img src="lupa.svg"></img></button>
+            </div>
+        </header>
+        <div class="realSection">
+            <section>
+                <p id="error"></p>
+                <div id="pokemonContainer"></div>
+                <div id="start-search">
+                    <p id="start-text">You can search for Pokemon by name, like "Snorlax", or by Pokedex number, like "143"</p>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/143.svg"></img>
+                </div>
+                <div id="pokedex-buttons">
+                    <button id="left-pokemon" onclick="leftPokemon()">Left</button>
+                    <button id="right-pokemon" onclick="rightPokemon()">Right</button>
+                </div>
+                
+                <footer>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/132.svg"></img>
+                    <a href="../index.html">&copy;2025 Iker Delgado</a>
+                </footer>
+                <script src="Scripts/script.js"></script>
+            </section>
+        </div>
+    </body>
+</html>
